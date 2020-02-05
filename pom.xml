@@ -6,7 +6,11 @@
 
     <groupId>com.weiyiysw</groupId>
     <artifactId>acen-utils</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>http-utils</module>
+    </modules>
 
     <properties>
         <java.version>1.8</java.version>
