@@ -12,13 +12,14 @@ import java.util.Map;
 public class OkHttpClientUtil {
     public static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 
-    static OkHttpClient client = new OkHttpClient();
+    final static OkHttpClient client = new OkHttpClient();
 
     public static void doGet(String baseUrl, Map<String, String> params) {
         Call call = generateGetCall(baseUrl, params);
         try {
             Response response = call.execute();
             // TODO: deal with response
+            System.out.println(response.body().string());
             System.out.println(response.toString());
             response.close();
         } catch (IOException e) {
@@ -36,6 +37,7 @@ public class OkHttpClientUtil {
 
             @Override
             public void onResponse(Call call, Response response) throws IOException {
+                System.out.println(response.body().string());
                 System.out.println(response.toString());
             }
         });
