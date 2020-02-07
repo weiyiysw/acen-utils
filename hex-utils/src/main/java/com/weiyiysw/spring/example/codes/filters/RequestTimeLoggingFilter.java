@@ -1,6 +1,6 @@
 package com.weiyiysw.spring.example.codes.filters;
 
-import com.weiyiysw.spring.example.codes.RequestWrapper;
+import com.weiyiysw.spring.example.codes.wrapper.RequestWrapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.core.annotation.Order;

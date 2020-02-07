@@ -1,6 +1,6 @@
 package com.weiyiysw.spring.example.codes.configuration;
 
-import com.autopai.iot.messages.push.web.spring.interceptors.ReqResLoggerInterceptors;
+import com.weiyiysw.spring.example.codes.interceptors.ReqResLoggerInterceptors;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
